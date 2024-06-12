@@ -640,4 +640,65 @@ body,
   .section.skill .skill-pane p.title {
     font-size: 24px;
   }
+  .section.time-line ul li .time-card {
+    width: 250px;
+    height: 150px;
+  }
+
+  .section.time-line ul li .time-card p {
+    font-size: 14px;
+  }
+
+  .section.time-line ul li .time-card p.title {
+    font-size: 22px;
+  }
+
+  .section.hobby .hobby-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .section.hobby .hobby-card .art {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section .contain .down-link {
+    width: 32px;
+    height: 32px;
+    bottom: -10px;
+  }
+  .section .contain .down-link .down-img {
+    width: 32px;
+    height: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .section.contact .footer p {
+    font-size: 16px;
+  }
+
+  .section.contact .contact-pane {
+    width: 1000px;
+    height: 450px;
+  }
+
+  .section.contact .title {
+    font-size: 48px;
+  }
+
+  .section.contact .contact-pane .contact-item {
+    font-size: 16px;
+  }
+
+  .section.contact .contact-pane .contact-item a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section.contact .contact-pane .contact-item img {
+    width: 70px;
+    height: 70px;
+  }
 }
