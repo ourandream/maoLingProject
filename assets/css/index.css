@@ -88,7 +88,7 @@ body,
 
 .section.self {
   background: url("../images/background.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@ body,
 
 .section.skill {
   background: url("../images/skill.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -352,7 +352,7 @@ body,
 
 .section.time-line {
   background: url("../images/time-line.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -460,7 +460,7 @@ body,
 
 .section.hobby {
   background: url("../images/hobby.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -527,7 +527,7 @@ body,
 
 .section.contact {
   background: url("../images/contact.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #000;
@@ -700,5 +700,33 @@ body,
   .section.contact .contact-pane .contact-item img {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section.skill .skill-pane {
+    padding-left: 0px;
+  }
+
+  .section.skill .skill-pane p {
+    margin-left: 0px !important;
+  }
+
+  .section.hobby .contain {
+    gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .section .contain {
+    height: 90%;
+  }
+
+  .section .contain .down-link {
+    bottom: 0;
+  }
+
+  .section.contact .contact-pane {
+    width: 100%;
   }
 }
