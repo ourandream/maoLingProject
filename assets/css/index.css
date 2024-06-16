@@ -629,10 +629,14 @@ body,
   height: 48px;
   transition: all 0.5s;
 }
-
+.section .down-link .down-img,
 .section .contain .down-link .down-img {
   width: 48px;
   height: 48px;
+}
+
+.section .hover .down-link {
+  bottom: 10%;
 }
 
 .section .contain .down-link:hover {
@@ -699,13 +703,15 @@ body,
   .section.hobby .hobby-card .art {
     width: 150px;
     height: 150px;
+    margin-bottom: 0px;
   }
-
+  .section .down-link,
   .section .contain .down-link {
     width: 32px;
     height: 32px;
     bottom: -10px;
   }
+  .section .down-link .down-img,
   .section .contain .down-link .down-img {
     width: 32px;
     height: 32px;
@@ -742,6 +748,9 @@ body,
 }
 
 @media screen and (max-width: 1000px) {
+  .main {
+    overflow-x: hidden;
+  }
   .section.skill .skill-pane {
     padding-left: 0px;
   }
@@ -756,6 +765,11 @@ body,
     overflow-y: hidden;
   }
 
+  .section .down-link {
+    position: absolute;
+    bottom: 5%;
+  }
+
   .section .contain {
     height: 90%;
   }
@@ -766,6 +780,24 @@ body,
 
   .section.contact .contact-pane {
     width: 100%;
+  }
+  .modal-window > div {
+    width: 80% !important;
+  }
+  .section.time-line ul {
+    flex-direction: column;
+  }
+  .section.time-line ul::before {
+    visibility: hidden;
+  }
+  .section.time-line ul li .time-card::before {
+    visibility: hidden;
+  }
+  .section.time-line ul li:nth-child(2n) .time-card {
+    position: static;
+  }
+  .section.time-line ul li .time-card::before {
+    height: 0;
   }
 }
 
